@@ -1,4 +1,4 @@
-package com.quan.eurekaserverpeer1;
+package com.quan.eurekaserverpeer2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @SpringBootApplication
 @EnableEurekaServer
-public class EurekaServerPeer1Application {
+public class EurekaServerPeer2Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaServerPeer1Application.class, args);
+        SpringApplication.run(EurekaServerPeer2Application.class, args);
     }
 
 }
