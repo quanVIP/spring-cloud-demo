@@ -1,13 +1,11 @@
 spring:
   application:
-    name: hello-server
+    name: config-client
 
+server:
+  port: 8882
 eureka:
-  instance:
-    appname: eureka-client1
   client:
     service-url:
       defaultZone: http://peer1:8091/eureka/
 
-server:
-  port: 8072

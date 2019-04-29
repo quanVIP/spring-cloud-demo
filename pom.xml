@@ -19,6 +19,10 @@
         <module>eureka-server-peer2</module>
         <module>eureka-client1</module>
         <module>service-ribbon</module>
+        <module>service-feign</module>
+        <module>server-zuul</module>
+        <module>config-server</module>
+        <module>config-client</module>
     </modules>
 
     <properties>
