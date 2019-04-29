@@ -1,20 +1,18 @@
-package com.quan.eurekaclient1.controller;
+package com.quan.serviceribbon.controller;
 
-
-import org.springframework.beans.factory.annotation.Value;
+import com.quan.serviceribbon.server.HelloServer;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
 
-
-    @Value("${server.port}")
-    String prot;
+    @Autowired
+    private HelloServer helloServer;
 
     @RequestMapping(value = "/hello")
     public String hello(){
-        return "Hello,i am "+ prot;
+        return  helloServer.hiServer();
     }
-
 }

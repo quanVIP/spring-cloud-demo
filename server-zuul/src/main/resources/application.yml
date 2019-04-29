@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: server-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8091/eureka/
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: service-ribbon
+    api-b:
+      path: /api-b/**
+      serviceId: service-feign
+server:
+  port: 8051

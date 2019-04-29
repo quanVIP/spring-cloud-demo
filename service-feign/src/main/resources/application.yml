@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: service-feign
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8091/eureka
+server:
+  port: 8061
+
+feign.hystrix.enabled: true
